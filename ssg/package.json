@@ -1,0 +1,32 @@
+{
+  "name": "ssg",
+  "version": "1.0.0",
+  "description": "static site generator",
+  "repository": "rgzee/ssg",
+  "author": "hi@rgz.ee",
+  "license": "isc",
+  "keywords": [
+    "static site generator",
+    "live reload"
+  ],
+  "main": "server.js",
+  "files": [
+    "*.js"
+  ],
+  "bin": {
+    "ssg": "server.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "node build.js ~/src/rgz.ee /tmp/rgz.ee",
+    "start": "node respawn.js server.js ~/src/rgz.ee/ssg"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "dependencies": {
+    "htmlparser2": "^8.0.1",
+    "marked": "^4.0.16",
+    "ws": "^8.6.0"
+  }
+}
