@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  margin: 1rem auto;
+  max-width: 50rem;
+  font: 20px/1.1 arial, sans-serif;
+}
+footer,
+header {
+  margin: 1rem 0;
+}
+a,
+a:active,
+a:hover,
+a:visited:hover {
+  color: #204fd5;
+}
+a:visited {
+  color: #334f83;
+}
+hr {
+  border: 0;
+}
+h1,
+h2,
+hr {
+  margin-top: 3rem;
+}
+html,
+ul {
+  padding: 0 1rem;
+}
+li {
+  padding: 0.125rem 0;
+}
+h1,
+h2,
+li,
+p,
+pre {
+  line-height: 1.25em;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+p img {
+  aspect-ratio: attr(width) / attr(height);
+  height: auto;
+  width: 100%;
+}
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+footer,
+header,
+small {
+  font-size: 0.8rem;
+}
+footer,
+footer a,
+footer a:visited,
+small,
+small a,
+small a:visited {
+  color: #666;
+}
+blockquote {
+  border-left: 0.05rem solid #ccc;
+  margin: 0;
+  padding-left: 0.8rem;
+}
+code,
+kbd,
+pre {
+  font-family: menlo, monospace;
+}
+pre {
+  padding: 1em 0;
+  overflow-x: auto;
+}
+q::before {
+  content: "> ";
+  color: #aaa;
+}
+kbd {
+  color: #000;
+  font-weight: 700;
+}
+samp {
+  background-color: #00c;
+  color: #fff;
+}
+var {
+  background-color: #fda;
+}
+td,
+th {
+  vertical-align: top;
+  padding: 0.5rem 1rem 0.5rem 0;
+  border-bottom: 0.05rem solid #ccc;
+}
+td:first-child {
+  white-space: nowrap;
+}
+td:last-child,
+th:last-child {
+  padding-right: 0;
+}
+tr:last-child td {
+  border-bottom: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #000;
+    color: #ccc;
+  }
+  a {
+    color: #fda;
+  }
+  a:active,
+  a:hover,
+  a:visited:hover,
+  kbd,
+  samp {
+    color: #fff;
+  }
+  a:visited {
+    color: #ba8;
+  }
+  footer,
+  footer a,
+  footer a:visited,
+  small,
+  small a,
+  small a:visited {
+    color: #888;
+  }
+  q::before {
+    color: #555;
+  }
+  var {
+    color: #000;
+  }
+  samp {
+    background-color: #00c;
+  }
+  blockquote {
+    border-left-color: #444;
+  }
+  td,
+  th {
+    border-bottom-color: #444;
+  }
+}

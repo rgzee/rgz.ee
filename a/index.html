@@ -1,0 +1,49 @@
+<html lang="en"><head><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000" media="(prefers-color-scheme: dark)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="description" content="this site works offline and you can install it to your home screen if you want">
+  <meta name="og:description" content="this site works offline and you can install it to your home screen if you want">
+  <meta name="og:title" content="web-app — rgz.ee">
+  <meta name="og:image" content="https://g.rgz.ee/favicon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="icon" type="image/png" sizes="196x196" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="manifest" href="/a/m.json">
+  <link rel="stylesheet" href="/0/0.css">
+  <style>
+    .avatar {
+      border-radius: 15px;
+      width: 60px;
+    }
+  </style>
+  <title>web-app — rgz.ee</title>
+
+  </head><body><header>
+    <a href="/"><img width="60" height="60" alt="logo" class="avatar" src="/favicon.svg"></a>
+  </header>
+  <script defer="" type="module" src="cache.js"></script>
+<style>
+.label { border-radius: 0.75rem; padding: 0.1rem 0.3rem; font-size: 0.8rem; }
+.online { color: #285f00; background-color: #a8ff60; }
+.offline { color: #5f0c00; background-color: #ff6c60; }
+</style>
+
+<h1 id="app">app</h1>
+<p>this site is a web app. it works offline and installable.</p>
+<p id="cache">you are <span class="online label">online</span>...</p>
+
+<p>when cache is available all requests are served from it. if something is missing in that
+cache <a href="/sw.js">service worker</a> tries to fetch it from the network when you're online.</p>
+
+  <footer>
+    <p>
+      &copy; 2022
+      <a href="/">rgz.ee o&uuml;</a> &middot;&nbsp;crafted&nbsp;by&nbsp;<a
+        href="https://romanzolotarev.com"
+        >roman</a
+      >
+    </p>
+  </footer>
+</body></html>

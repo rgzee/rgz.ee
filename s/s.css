@@ -1,0 +1,57 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+html {
+  max-width: 100%;
+  scroll-snap-type: y mandatory;
+}
+h1,
+h2,
+li,
+p,
+pre,
+svg {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+h1,
+h2,
+li,
+p,
+pre {
+  margin: 100vh auto;
+}
+h1,
+h2,
+li,
+pre {
+  max-width: fit-content;
+}
+pre,
+small {
+  font-size: 5vmin;
+}
+h1,
+h2,
+li,
+p {
+  font-size: 10vmin;
+  text-align: center;
+}
+li {
+  list-style-type: none;
+}
+img,
+svg {
+  width: 100vw;
+}
+img {
+  height: auto;
+  max-width: 100vh;
+  max-height: 100vh;
+}
+svg {
+  height: 100vh;
+}
